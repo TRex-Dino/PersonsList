@@ -29,7 +29,10 @@ extension Person {
             let surname = dataManager.listOfSurnames.remove(at: Int.random(in: 0...dataManager.listOfSurnames.count-1))
             let email = dataManager.listOfEmails.remove(at: Int.random(in: 0...dataManager.listOfEmails.count-1))
             let phone = dataManager.listOfPhones.remove(at: Int.random(in: 0...dataManager.listOfPhones.count-1))
-            persons.append(Person(name: name, surname: surname, email: email, phone: phone))
+            persons.append(Person(name: name,
+                                  surname: surname,
+                                  email: email,
+                                  phone: phone))
         }
         return persons
     }
