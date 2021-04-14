@@ -48,10 +48,60 @@
                     <view key="view" contentMode="scaleToFill" id="2qv-5x-J1q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="sLg-Ne-IQQ">
+                                <rect key="frame" x="20" y="94" width="335" height="76"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="M3Y-KR-6nI">
+                                        <rect key="frame" x="0.0" y="0.0" width="48.5" height="76"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qLg-if-uYN">
+                                                <rect key="frame" x="0.0" y="0.0" width="48.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oHA-Cg-hF0">
+                                                <rect key="frame" x="0.0" y="55.5" width="48.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="0qW-9e-JVf">
+                                        <rect key="frame" x="68.5" y="0.0" width="266.5" height="76"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="da4-Fa-Wet" userLabel="phone">
+                                                <rect key="frame" x="0.0" y="0.0" width="41.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzn-hW-nOg" userLabel="email">
+                                                <rect key="frame" x="0.0" y="55.5" width="41.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="LAz-KN-AbD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LAz-KN-AbD" firstAttribute="trailing" secondItem="sLg-Ne-IQQ" secondAttribute="trailing" constant="20" id="78f-aW-ios"/>
+                            <constraint firstItem="sLg-Ne-IQQ" firstAttribute="top" secondItem="LAz-KN-AbD" secondAttribute="top" constant="50" id="B4D-oY-qqu"/>
+                            <constraint firstItem="sLg-Ne-IQQ" firstAttribute="leading" secondItem="LAz-KN-AbD" secondAttribute="leading" constant="20" id="hWw-bl-3gl"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="QLZ-Er-oOP"/>
+                    <connections>
+                        <outlet property="emailLabel" destination="fzn-hW-nOg" id="BAw-vl-dfR"/>
+                        <outlet property="phoneLabel" destination="da4-Fa-Wet" id="Jwm-a2-x5j"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vPk-uL-Jft" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
