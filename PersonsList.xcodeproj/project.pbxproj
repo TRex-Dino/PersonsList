@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		0A3C06DF262632D300D853BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3C06DE262632D300D853BC /* AppDelegate.swift */; };
 		0A3C06E1262632D300D853BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3C06E0262632D300D853BC /* SceneDelegate.swift */; };
-		0A3C06E3262632D300D853BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3C06E2262632D300D853BC /* ViewController.swift */; };
 		0A3C06E6262632D300D853BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A3C06E4262632D300D853BC /* Main.storyboard */; };
 		0A3C06E8262632D300D853BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A3C06E7262632D300D853BC /* Assets.xcassets */; };
 		0A3C06EB262632D300D853BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A3C06E9262632D300D853BC /* LaunchScreen.storyboard */; };
+		0A3C06F52626338000D853BC /* PersonsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3C06F42626338000D853BC /* PersonsListViewController.swift */; };
+		0A3C07022626351700D853BC /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3C07012626351700D853BC /* Person.swift */; };
+		0A3C07052626364500D853BC /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3C07042626364500D853BC /* DataManager.swift */; };
+		0A3C07092626410A00D853BC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3C07082626410A00D853BC /* MainViewController.swift */; };
+		0A3C0710262641B300D853BC /* FullListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3C070F262641B300D853BC /* FullListViewController.swift */; };
+		0A3C07142626422D00D853BC /* SingleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3C07132626422D00D853BC /* SingleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0A3C06DB262632D300D853BC /* PersonsList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonsList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A3C06DE262632D300D853BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A3C06E0262632D300D853BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0A3C06E2262632D300D853BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0A3C06E5262632D300D853BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0A3C06E7262632D300D853BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A3C06EA262632D300D853BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A3C06EC262632D300D853BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A3C06F42626338000D853BC /* PersonsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsListViewController.swift; sourceTree = "<group>"; };
+		0A3C07012626351700D853BC /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		0A3C07042626364500D853BC /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		0A3C07082626410A00D853BC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		0A3C070F262641B300D853BC /* FullListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullListViewController.swift; sourceTree = "<group>"; };
+		0A3C07132626422D00D853BC /* SingleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,60 @@
 		0A3C06DD262632D300D853BC /* PersonsList */ = {
 			isa = PBXGroup;
 			children = (
-				0A3C06DE262632D300D853BC /* AppDelegate.swift */,
-				0A3C06E0262632D300D853BC /* SceneDelegate.swift */,
-				0A3C06E2262632D300D853BC /* ViewController.swift */,
-				0A3C06E4262632D300D853BC /* Main.storyboard */,
-				0A3C06E7262632D300D853BC /* Assets.xcassets */,
-				0A3C06E9262632D300D853BC /* LaunchScreen.storyboard */,
-				0A3C06EC262632D300D853BC /* Info.plist */,
+				0A3C07002626350400D853BC /* Models */,
+				0A3C06F72626339E00D853BC /* Storyboards */,
+				0A3C06FF262634E400D853BC /* ViewControllers */,
+				0A3C06F8262633BE00D853BC /* Resources */,
+				0A3C06F9262633D200D853BC /* Supporting */,
 			);
 			path = PersonsList;
+			sourceTree = "<group>";
+		};
+		0A3C06F72626339E00D853BC /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				0A3C06E4262632D300D853BC /* Main.storyboard */,
+				0A3C06E9262632D300D853BC /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		0A3C06F8262633BE00D853BC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0A3C06E7262632D300D853BC /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0A3C06F9262633D200D853BC /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				0A3C06DE262632D300D853BC /* AppDelegate.swift */,
+				0A3C06E0262632D300D853BC /* SceneDelegate.swift */,
+				0A3C06EC262632D300D853BC /* Info.plist */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		0A3C06FF262634E400D853BC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0A3C07082626410A00D853BC /* MainViewController.swift */,
+				0A3C06F42626338000D853BC /* PersonsListViewController.swift */,
+				0A3C070F262641B300D853BC /* FullListViewController.swift */,
+				0A3C07132626422D00D853BC /* SingleViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0A3C07002626350400D853BC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0A3C07012626351700D853BC /* Person.swift */,
+				0A3C07042626364500D853BC /* DataManager.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +192,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A3C06E3262632D300D853BC /* ViewController.swift in Sources */,
 				0A3C06DF262632D300D853BC /* AppDelegate.swift in Sources */,
+				0A3C07052626364500D853BC /* DataManager.swift in Sources */,
+				0A3C06F52626338000D853BC /* PersonsListViewController.swift in Sources */,
+				0A3C07092626410A00D853BC /* MainViewController.swift in Sources */,
+				0A3C07022626351700D853BC /* Person.swift in Sources */,
 				0A3C06E1262632D300D853BC /* SceneDelegate.swift in Sources */,
+				0A3C07142626422D00D853BC /* SingleViewController.swift in Sources */,
+				0A3C0710262641B300D853BC /* FullListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,7 +347,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = PersonsList/Info.plist;
+				INFOPLIST_FILE = PersonsList/Supporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,7 +365,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = PersonsList/Info.plist;
+				INFOPLIST_FILE = PersonsList/Supporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
