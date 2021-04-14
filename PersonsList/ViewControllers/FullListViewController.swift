@@ -24,6 +24,10 @@ class FullListViewController: UITableViewController {
         
         fullName.text = persons[section].fullname
         fullName.textAlignment = .center
+        fullName.backgroundColor = UIColor(red: CGFloat.random(in: 0.65...0.9),
+                                           green: CGFloat.random(in: 0.65...0.9),
+                                           blue: CGFloat.random(in: 0.65...0.9),
+                                           alpha: 1)
         
         return fullName
     }
@@ -31,7 +35,7 @@ class FullListViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FullContacts", for: indexPath)
         
-        let person = persons[indexPath.row]
+        let person = persons[indexPath.section]
         
         var content = cell.defaultContentConfiguration()
         

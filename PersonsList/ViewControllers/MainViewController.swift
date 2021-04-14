@@ -9,12 +9,10 @@ import UIKit
 
 class MainViewController: UITabBarController {
 
-    private let dataManager = DataManager()
-    private var persons: [Person]!
+    private var persons = Person.getPersons()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        persons = dataManager.getPersonsList()
         
         guard let viewControllers = self.viewControllers else { return }
         

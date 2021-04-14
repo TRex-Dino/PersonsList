@@ -6,57 +6,43 @@
 //
 
 class DataManager {
-    let listOfNames = [ "Ja",
-                        "Ba",
-                        "Mu",
-                        "Su",
-                        "Lu",
-                        "Gu",
-                        "Pu"
+    var listOfNames = [ "Sam",
+                        "Saad",
+                        "P",
+                        "Mike",
+                        "Moe",
+                        "Jesus",
+                        "Batman",
+                        "Robin"
     ]
     
-    let listOfSurnames = [ "Go",
-                           "Po",
-                           "Jo",
-                           "Io",
-                           "Lo",
-                           "Mau"
+    var listOfSurnames = [ "Sung",
+                           "Maan",
+                           "Ennis",
+                           "Litoris",
+                           "Lester",
+                           "Christ",
+                           "Brain",
+                           "Rape"
     ]
     
-    let listOfEmails = [ "1@gmail.com",
+    var listOfEmails = [ "1@gmail.com",
                          "2@gmail.com",
                          "3@gmail.com",
                          "4@gmail.com",
                          "5@gmail.com",
                          "6@gmail.com",
                          "7@gmail.com",
+                         "8@gmail.com"
     ]
     
-    let listOfPhones = [ "0",
-                         "1",
-                         "2",
-                         "3",
-                         "4",
-                         "5",
-                         "6",
+    var listOfPhones = [ "123456789",
+                         "923847563",
+                         "234567982",
+                         "019238478",
+                         "923846723",
+                         "502398473",
+                         "667845621",
+                         "029385621"
     ]
-    
-    func getPersonsList() -> [Person] {
-        var persons = [Person]()
-        
-        let quantityPersons = min(listOfNames.count, listOfSurnames.count)
-        for _ in 1...quantityPersons {
-            guard let name = listOfNames.randomElement(),
-                  let surname = listOfSurnames.randomElement(),
-                  let email = listOfEmails.randomElement(),
-                  let phone = listOfPhones.randomElement()
-            else { break }
-            
-            persons.append(Person(name: name,
-                                  surname: surname,
-                                  email: email,
-                                  phone: phone))
-        }
-        return persons
-    }
 }

@@ -10,9 +10,12 @@ import UIKit
 class PersonsListViewController: UITableViewController {
 
     var persons: [Person]!
-    
-    // MARK: - Table view data source
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        tableView.rowHeight = 80
+    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         persons.count
     }
@@ -26,7 +29,19 @@ class PersonsListViewController: UITableViewController {
         content.text = person.fullname
         
         cell.contentConfiguration = content
+        cell.backgroundColor = UIColor(red: CGFloat.random(in: 0.65...0.9),
+                                       green: CGFloat.random(in: 0.65...0.9),
+                                       blue: CGFloat.random(in: 0.65...0.9),
+                                       alpha: 1)
         
         return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let singleVC = segue.destination as? SingleViewController else { return }
+        guard let indexPath = tableView.indexPathForSelectedRow else { return }
+        
+        singleVC.person = persons[indexPath.row]
+        singleVC.color = tableView.cellForRow(at: indexPath)?.backgroundColor
     }
 }

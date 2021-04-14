@@ -12,10 +12,17 @@ class SingleViewController: UIViewController {
     @IBOutlet var phoneLabel: UILabel!
     @IBOutlet var emailLabel: UILabel!
     
+    var person: Person!
+    var color: UIColor!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        navigationItem.title = person.fullname
+        phoneLabel.text = person.phone
+        emailLabel.text = person.email
+        
+        view.backgroundColor = color
     }
     
 

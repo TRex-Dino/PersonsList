@@ -24,6 +24,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="de4-oR-14O" kind="show" id="SoS-u5-vOD"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -31,11 +34,8 @@
                             <outlet property="delegate" destination="SnE-Et-wI4" id="eOI-Mw-kYO"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="5OX-S4-YyP"/>
+                    <tabBarItem key="tabBarItem" title="Persons List" image="rectangle.stack.person.crop" catalog="system" id="5OX-S4-YyP"/>
                     <navigationItem key="navigationItem" title="Root View Controller" id="UfG-PC-oBQ"/>
-                    <connections>
-                        <segue destination="de4-oR-14O" kind="show" identifier="Show Contact" id="AON-i6-afU"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JS8-UA-N4u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -50,7 +50,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="sLg-Ne-IQQ">
-                                <rect key="frame" x="20" y="94" width="335" height="76"/>
+                                <rect key="frame" x="20" y="146" width="335" height="76"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="M3Y-KR-6nI">
                                         <rect key="frame" x="0.0" y="0.0" width="48.5" height="76"/>
@@ -111,8 +111,8 @@
         <scene sceneID="Vof-MQ-3pG">
             <objects>
                 <navigationController id="9Wu-ln-rwO" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="khg-4U-SHh">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="khg-4U-SHh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -123,12 +123,12 @@
             </objects>
             <point key="canvasLocation" x="-1116" y="216"/>
         </scene>
-        <!--Main View Controller-->
+        <!--Persons List-->
         <scene sceneID="uGy-LX-iSq">
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="8f5-bS-OoF" customClass="MainViewController" customModule="PersonsList" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="4v3-JU-0rV"/>
+                    <navigationItem key="navigationItem" title="Persons List" id="4v3-JU-0rV"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Atm-As-uTn">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -143,7 +143,7 @@
             </objects>
             <point key="canvasLocation" x="-228" y="215.44227886056973"/>
         </scene>
-        <!--Item-->
+        <!--Full List-->
         <scene sceneID="Ihd-Om-50C">
             <objects>
                 <tableViewController id="Ddp-R4-6pW" customClass="FullListViewController" customModule="PersonsList" customModuleProvider="target" sceneMemberID="viewController">
@@ -166,7 +166,7 @@
                             <outlet property="delegate" destination="Ddp-R4-6pW" id="g5V-ff-igb"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="M1i-qM-QXI"/>
+                    <tabBarItem key="tabBarItem" title="Full List" image="person.2" catalog="system" id="M1i-qM-QXI"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EAs-4u-p6j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -174,6 +174,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="person.2" catalog="system" width="128" height="81"/>
+        <image name="rectangle.stack.person.crop" catalog="system" width="128" height="122"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
